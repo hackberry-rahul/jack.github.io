@@ -1,0 +1,200 @@
+img{
+    width: 100%;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+ul{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+ul a{
+    color: white;
+}
+ul li :hover{
+    color: rgb(221, 215, 197);
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    color: white;
+    font-size: medium;
+    list-style: none;
+    font-family: 'Source Sans Pro';
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.toggle-button{
+    display: flex;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: -75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.toggle-button .bar{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+}
+.mobile_menu{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+@media only screen and (max-width:400px){
+    .toggle-button{
+        display: flex;
+    }
+    ul li{
+        display: none;
+    }
+}
+.navbar_top{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    float: left;
+}
+.inner_navbar{
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 90%;
+}
+.menu_list {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.inner_menu{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    text-align: left;
+    float: left;
+}
+.inner_menu li{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    padding: 35px;
+    color: white;
+    font-size: medium;
+    font-family: 'Source Sans Pro';
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.inner_menu li:hover{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: azure;
+    color: black;
+}
+.search_bar ,a{
+    display: inline-block;
+    position: relative;
+    width: 10%;
+    float: right;
+    padding: 15px;
+}
+.search_bar img{
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    float: right;
+}
+.search_bar :hover{
+    
+}
+.slider_section{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.inner_slider{
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.inner_slider_details{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    /* float: left; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+}
+.inner_slider_details, h3 p{
+    color: white;
+}
+.third_section{
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+.brand_section{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+.inner_brand_section{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+}
+.inner_brand_section p{
+    text-align: justify;
+    font-size: 15px;
+}
+.brand_img_section{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.brand_img{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 25px;
+}
+.inner_brand{
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    float: left;
+}
+
+.inner_brand img{
+    display: inline-block;
+    position: relative;
+    width: 40%;
+}
