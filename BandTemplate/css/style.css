@@ -1,13 +1,38 @@
 img{
     width: 100%;
 }
+html::-webkit-scrollbar {
+	width: 0.4vw;
+	
+  }
+  html::-webkit-scrollbar-thumb {
+	background-color: #daa700e7;
+	border-radius: 15px;
+  }
+  html::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(255, 249, 169);
+  }
+  html::-webkit-scrollbar-track {
+	background-color: rgba(255, 249, 190, 0.333) !important;
+  }
+  html::-webkit-scrollbar-track {
+	background-color: rgba(48, 15, 233, 0.333);
+  }
+  html::-webkit-scrollbar-track:hover {
+	background-color: #fff3cd;
+  }
 body{
     font-family: 'Source Sans Pro', sans-serif;
+	scroll-snap-type: y mandatory;
+	scroll-snap-align: start;
+  	scroll-snap-stop: always;
 }
 nav {
 	position: relative;
 	z-index: 99;
 	display: flex;
+	width: 100%;
+	height: 60px;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #000;
@@ -38,10 +63,14 @@ nav h1:hover {
 	color: white;
 	text-decoration: none;
 	transition: 0.3s;
+	font-size: large;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .menu a:hover {
-	color: crimson;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #ffc800;
+	text-decoration: none;
 }
 
 .hamburger {
@@ -51,17 +80,40 @@ nav h1:hover {
 	background: none;
 	cursor: pointer;
 
-	display: block;
+	/* display: block; */
 	width:100%;
 	text-align: right;
-	height: 2rem;
+	/* height: 2rem; */
 }
 
 .hamburger span {
 	color: #FFF;
-	font-size: 2rem;
+	font-size: 30px;
 }
-
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+.material-icons{
+    display: inline-block;
+	position: fixed;
+	font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
+	right: 0;
+    padding: 16px;
+    top: 0;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
 .mobile-menu {
 	position: fixed;
 	top: 0;
@@ -72,8 +124,8 @@ nav h1:hover {
 
 	padding-top: 6rem;
 	opacity: 0;
-	transform: translateY(-100%);
-	background-color: #000;
+	transform: translateX(-100%);
+	background-color: #000000f2;
 	color: #FFF;
 	transition: 0.3s;
 }
@@ -93,12 +145,20 @@ nav h1:hover {
 	transition: 0.3s;
 }
 
-.mobile-menu a:hover {
+.mobile-menu a:hover{
+	color: #ffc800;
+	text-decoration: none;
+}
+.mobile-menu a:focus{
 	color: #ffc800;
 	text-decoration: none;
 }
 
 @media (min-width: 768px) {
+	.nav{
+		display: inline-block;
+		height: 100px;
+	}
 	.mobile-menu, .hamburger {
 		display: none;
 	}
@@ -119,7 +179,7 @@ nav h1:hover {
 }
 .inner_slider{
     display: inline-block;
-    position: relative;
+    position: absolute;
     float: left;
     width: 100%;
 }
@@ -135,6 +195,33 @@ nav h1:hover {
 .inner_slider_details, h3 p{
     color: white;
 }
+.searchbar_slider{
+	display: flex;
+    position: relative;
+    width: 100%;
+    padding: 19%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.search_btn{
+	width: 100%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.search_btn input{
+	border: none;
+    width: 100%;
+    border-radius: 24px;
+}
+.search_btn input::before{
+	border:none;
+}
+.search_btn input:focus{
+	border:none;
+}
+
 .third_section{
     display: flex;
     position: relative;
