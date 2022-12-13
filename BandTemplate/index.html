@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -15,19 +18,24 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Band</a></li>
-          <li><a href="#">Tour</a></li>
-          <li><a href="#">More</a></li>
-      </ul>
+      <nav class="nav_section">  
+        <div class="menu is-open">
+          <a href="#">Home</a>
+          <a href="#">Band</a>
+          <a href="#">Tour</a>
+          <a href="#">Contact</a>
+        </div>
+  
+        <button class="hamburger">
+          <span class="material-icons ">menu</span>
+        </button>
       </nav>
+      <div class="mobile-menu ">
+        <a href="#">Home</a>
+        <a href="#">Band</a>
+        <a href="#">Tour</a>
+        <a href="#">Contact</a>
+      </div>
     </header>
     <!-- <div class="navbar_top">
       <div class="container-fluid">
@@ -93,5 +101,16 @@
        </div>
       </div>
     </div>
+    <script src="js/script.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("link_menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
   </body>
 </html>
