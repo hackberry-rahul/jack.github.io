@@ -199,7 +199,7 @@ nav h1:hover {
 	display: flex;
     position: relative;
     width: 100%;
-    padding: 19%;
+    padding: 16%;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
@@ -207,19 +207,28 @@ nav h1:hover {
 .search_btn{
 	width: 100%;
     text-align: center;
-    display: inline-block;
+    display: flex;
     position: relative;
+    align-items: center;
 }
 .search_btn input{
 	border: none;
-    width: 100%;
+    width: 75%;
+    height: 40px;
+	position: absolute;
     border-radius: 24px;
+	outline: none;
+	padding: 14px;
 }
 .search_btn input::before{
 	border:none;
 }
-.search_btn input:focus{
+.search_btn input::after{
 	border:none;
+}
+.search_icon{
+	display: inline-block;
+	position: relative;
 }
 
 .third_section{
